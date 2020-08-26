@@ -10,6 +10,7 @@ class Test extends StatefulWidget {
 }
 
 class _TestState extends State<Test> {
+  String name = "BootCamp";
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,8 +21,8 @@ class _TestState extends State<Test> {
           children: [
             Center(
                 child: Text(
-              "Line 1",
-              style: TextStyle(),
+              name,
+              style: TextStyle(fontSize: 50, color: Colors.purple),
             )),
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
@@ -36,9 +37,8 @@ class _TestState extends State<Test> {
             ),
             FlatButton(
                 onPressed: () {
-                  print("Button Pressed!");
                   setState(() {
-
+                    name = "FID!";
                   });
                 },
                 child: Text('Click'),
