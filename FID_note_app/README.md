@@ -1,6 +1,6 @@
 # fid_note_app
 
-A new Flutter application.
+A simple note taking application which is built using Flutter.It has the functionality to add and remove any notes.
 
 ## Getting Started
 
